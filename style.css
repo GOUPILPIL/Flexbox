@@ -5,10 +5,10 @@
 }
 
 body {
-  display: flex; /* crée un contexte flex pour ses enfants */
+  display: flex; /* Initialise une gros boite ou les autres ironts */
   flex-direction: column; /* affichage vertical */
-  min-height: 100vh; /* toute la hauteur du viewport */
-  padding: 1em;
+  min-height: 100vh; /* toute la hauteur du viewport VH= pourcentage auteur bloc */
+  padding: 5px;/*unite de longeur lien police*/
 }
 
 .wrapper {
@@ -16,9 +16,8 @@ body {
   display: flex; /* crée un contexte flex pour ses enfants */
 }
 
-nav,
-aside {
-  width: 10em;
+nav, aside {
+  width: 170px;
 }
 
 article {
