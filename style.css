@@ -2,11 +2,12 @@
 
 * {
   box-sizing: border-box; /* pour maîtriser width et flex-basis */
+  flex-wrap: wrap;
 }
 
 body {
   display: flex; /* Initialise une gros boite ou les autres ironts */
-  flex-direction: column; /* affichage vertical */
+  flex-direction: column ; /* affichage vertical */
   min-height: 100vh; /* toute la hauteur du viewport VH= pourcentage auteur bloc */
   padding: 5px;/*unite de longeur lien police*/
 }
@@ -21,11 +22,20 @@ nav, aside {
 }
 
 article {
+  display: flex;
   flex: 1; /* occupe la largeur restante */
+  flex-flow: : row wrap;
+  justify-content: space-between;
+}
+img{
+	flex: 1;
+	height: 200px;
+	width: 300px;
+
 }
 
 nav {
-  order: -1; /* nav s'affiche en premier */
+  order: -1/* nav s'affiche en premier */
 }
 
 
@@ -50,7 +60,7 @@ nav {
 
 body {
   margin: 0;
-  background: #999;
+  background: #c0392b;
   font-family: arial, sans-serif;
 }
 header,
@@ -60,20 +70,21 @@ article,
 footer {
   margin: .4em;
   padding: 1em;
-  border-radius: 6px;
+  border-radius: 1px;
 }
 header {
-  background: #ffeebb;
+  background: #fbfcfc;
+  text-align: center;
 }
 nav {
-  background: #ccccff;
+  background: #cbd0d3;
 }
 aside {
-  background: #ccccff;
+  background: #cbd0d3;
 }
 article {
-  background: #dddd88;
+  background: #fbfcfc;
 }
 footer {
-  background: #ffeebb;
+  background: #fbfcfc;
 }
